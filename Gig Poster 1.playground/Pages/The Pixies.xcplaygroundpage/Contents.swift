@@ -30,14 +30,20 @@ let limeGreen = Color(hue: 106, saturation: 64, brightness: 73, alpha: 100)
 
 // Begin your solution here...
 
+let circle = {
 
-/*:
- ## Use Source Control
- 
- Remember to commit and push your work before 11:30 AM on Monday, January 13, 2020, please.
+canvas.fillColor = Color(hue: 106, saturation: 64, brightness: 73, alpha: 100)
 
- ## Template code
- The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
- */
+canvas.borderColor = Color(hue: 106, saturation: 64, brightness: 73, alpha: 100)
+
+    canvas.drawEllipse(at: Point(x: 0, y: 0), width: 35, height: 35)
+}
+
+let top = {
+    
+    canvas.drawRect(at: Point(x: 400, y: 200) 200, width: 400, height: 200)
+    
+}
+
 PlaygroundPage.current.liveView = canvas
 
